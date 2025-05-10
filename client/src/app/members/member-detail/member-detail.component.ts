@@ -23,7 +23,6 @@ export class MemberDetailComponent implements OnInit {
   loadMember() {
     const username = this.route.snapshot.paramMap.get('username');
     if (!username) return;
-    console.log(username.toLowerCase());
     this.memberService.getMember(username.toLowerCase()).subscribe({
       next: member => {
         this.member = member;
