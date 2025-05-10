@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, signal } from '@angular/core';
 import { User } from '../_models/user';
 import { map } from 'rxjs';
-import { JsonPipe } from '@angular/common';
 import { environment } from '../../environments/environment';
 
 @Injectable({
